@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English speech to text</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #text {
+            width: 80%;
+            height: 120px;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #start {
+            padding: 12px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #start:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        #start:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+        #instructions {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>English Speech to Text</h1>
+    <button id="start">🎤 Start</button>
+    <textarea id="text" placeholder="Your speech will appear here..."></textarea>
+    <p id="instructions">Click the button and start speaking. Your words will be transcribed below.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
